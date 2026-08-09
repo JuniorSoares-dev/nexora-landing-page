@@ -1,0 +1,11 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-menu,
+.header-actions {
+  display: none;
+}
+.logo-air img {
+  width: 6rem;
+}
