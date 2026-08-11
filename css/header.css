@@ -1,6 +1,7 @@
 .main-header {
   display: flex;
   justify-content: space-between;
+  padding: 1rem;
 }
 .navigation-menu,
 .header-actions {
@@ -9,3 +10,21 @@
 .logo-air img {
   width: 6rem;
 }
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background-color: var(--color-background);
+    border: none;
+
+}
+.menu-toggle span{
+    display: block;
+    height: 3px;
+    width: 32px;
+    background-color: var(--color-dark);
+    padding: 1px;
+    border-radius: 20px;
+    
+}
+
