@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 :root {
   --color-background: #ffffff;
   --color-primary: #0066ff;
   --color-dark: #282938;
   --color-gray: #505056;
+  --text-color-header:#434959;
 }
 /* Reset CSS */
 *,
@@ -27,4 +30,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+body{
+  font-family: "Rubik", sans-serif;
 }
