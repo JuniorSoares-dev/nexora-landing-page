@@ -47,6 +47,7 @@
   .header-actions {
     display: flex;
     gap: 32px;
+    align-items: center;
   }
   .header-cta {
     font-weight: 500;
