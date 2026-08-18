@@ -1,33 +1,73 @@
-.hero{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-    background-color: var(--color-background-secondary);
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--color-background-secondary);
 }
-h1{
-font-size: 1.8rem;
-margin-bottom: 1rem;
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
-p{
-font-size: 1rem;
-margin-bottom: 2rem;
+p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
-.store-links{
-display: flex;
-flex-direction: column;
-
+.store-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.store-links img{
-    width: 11rem;
+.store-links img {
+  width: 11rem;
 }
-.hero-img{
-    background-image: url(../assets/images/blue-scribble.png);
-    background-repeat: no-repeat;
-background-size: contain;
-background-position:-8px 60px;
+.hero-img {
+  background-image: url("../assets/images/blue-scribble.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -8px 60px;
 }
-.hero-img img{
- transform: translateX(20px);   
+.hero-img img {
+  transform: translateX(20px);
+}
+@media (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+    text-align: left;
+    padding: 17px 80px;
+  }
+  .store-links {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .hero-content {
+    transform: translateY(-70px);
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.6875rem;
+    padding: 4rem 5rem;
+    text-align: left;
+  }
+  .hero-content {
+    transform: translateY(-70px);
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 120%;
+    width: 40rem;
+    margin-bottom: 24px;
+  }
+  .hero p {
+    font-size: 1.125rem;
+    margin-bottom: 40px;
+  }
+  .store-links {
+    flex-direction: row;
+    gap: 32px;
+  }
 }
