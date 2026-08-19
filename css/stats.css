@@ -1,11 +1,26 @@
-.stats{
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    text-align: center;
-    gap: 2rem;
+.stats {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  gap: 2rem;
 }
-.stat strong{
-    display: block;
-    font-size: 1.8rem;
+.stat strong {
+  display: block;
+  font-size: 1.8rem;
+}
+@media (min-width: 1024px) {
+  .stats {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem;
+  }
+}
+@media (min-width: 1440px) {
+  .stat strong {
+    font-size: 48px;
+  }
+  .stat span {
+    font-size: 24px;
+  }
 }
