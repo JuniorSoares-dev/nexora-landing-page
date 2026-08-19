@@ -1,0 +1,11 @@
+.stats{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    gap: 2rem;
+}
+.stat strong{
+    display: block;
+    font-size: 1.8rem;
+}
