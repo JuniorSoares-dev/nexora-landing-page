@@ -1,0 +1,51 @@
+.pricing {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: var(--color-background-secondary);
+}
+.pricing-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.pricing-card {
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+.benefits li {
+  display: flex;
+  align-items: center;
+}
+.benefits li img:first-child {
+  margin-right: 0.5rem;
+}
+
+.benefits li img:last-child {
+  margin-left: auto;
+}
+.pricing-card data {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.pricing-card .pricing-button {
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  padding: 1rem 3rem;
+  background-color: var(--color-background);
+  cursor: pointer;
+}
+.pricing-card--featured .pricing-button{
+background-color: var(--color-primary);
+color: var(--color-background);
+border-color: var(--color-background);
+}
+.pricing-card--featured{
+  box-shadow: 0 20px 24px -4px rgba(16, 24, 40, 0.08);
+}
