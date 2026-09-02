@@ -41,11 +41,53 @@
   background-color: var(--color-background);
   cursor: pointer;
 }
-.pricing-card--featured .pricing-button{
-background-color: var(--color-primary);
-color: var(--color-background);
-border-color: var(--color-background);
+.pricing-card--featured .pricing-button {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  border-color: var(--color-background);
 }
-.pricing-card--featured{
+.pricing-card--featured {
   box-shadow: 0 20px 24px -4px rgba(16, 24, 40, 0.08);
+}
+@media (min-width: 1024px) {
+  .pricing {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 5rem 2rem;
+  }
+  .pricing-cards {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+  .pricing > p {
+    width: 733px;
+    margin-bottom: 3rem;
+  }
+  .pricing-cards .pricing-button {
+    text-align: center;
+    padding: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .pricing {
+    gap: 0;
+    padding: 7rem 5rem;
+  }
+  .pricing h2 {
+    font-size: 3rem;
+  }
+  .pricing > p {
+    margin-bottom: 8rem;
+  }
+  .pricing-cards .pricing-button {
+    text-align: center;
+  }
+  .pricing-card data {
+    font-size: 3rem;
+  }
+  .pricing-card .pricing-button {
+    font-size: 1.125rem;
+  }
 }
