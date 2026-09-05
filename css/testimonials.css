@@ -37,6 +37,7 @@
   border: none;
   background: none;
   padding: 0;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .testimonials {
@@ -46,19 +47,39 @@
     padding: 100px 32px 110px 32px;
   }
   .testimonial-author img {
-    width: 400px;
+    width: 7rem;
   }
   .testimonial-card {
+    transform: none;
     z-index: 1;
     padding: 28px 32px 32px 120px;
+    height: 250px;
+    gap: 0px;
   }
-  .testimonial-card p {
+  .testimonial-card > p {
     font-size: 18px;
+    margin-bottom: 1rem;
   }
   .testimonial-author strong {
     font-size: 20px;
   }
-  .testimonial-author img {
-    width: 156px;
+  .testimonial-image {
+    flex-shrink: 0;
   }
+  .testimonial-image img {
+    transform: translateX(3rem);
+  }
+}
+@media (min-width: 1440px) {
+  .testimonial-image img {
+    width: 395px;
+  }
+  .testimonial-card{
+    height: 395px;
+    padding: 79px 50px 50px 120px;
+  }
+.testimonial-card > p {
+  font-size:  1.5rem;
+  margin-bottom: 5rem;
+}
 }
