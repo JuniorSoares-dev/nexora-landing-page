@@ -1,0 +1,70 @@
+.download {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+.download .terms {
+  font-size: 0.8rem;
+}
+.download-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.download form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.download form input {
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+.download form button {
+  background-color: var(--color-dark);
+  color: var(--color-background);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.download .terms a {
+  color: var(--color-dark);
+  text-decoration: none;
+}
+@media (min-width: 1024px) {
+  .download {
+    padding: 2rem 10rem;
+    gap: 2rem;
+  }
+  .download-content {
+    gap: 2rem;
+  }
+  .download h2 {
+    font-size: 48px;
+  }
+  .download form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .download form input {
+    flex: 1;
+  }
+  .download form button {
+    border-radius: 10px;
+    padding: 15px 28px;
+  }
+  .download .terms {
+    margin-top: -1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .download {
+    padding: 6rem 25rem;
+  }
+}
