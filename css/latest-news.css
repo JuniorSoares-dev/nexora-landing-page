@@ -1,0 +1,22 @@
+.latest-news {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.latest-news .news-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.latest-news .news-cards .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.latest-news .news-cards article{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
