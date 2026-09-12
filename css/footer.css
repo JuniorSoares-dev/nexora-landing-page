@@ -50,3 +50,31 @@
   display: flex;
   gap: 1rem;
 }
+@media (min-width: 1024px) {
+  .main-footer {
+    padding: 7rem 4.25rem;
+    gap: 5rem;
+  }
+  .main-footer .footer-columns {
+    justify-content: space-between;
+  }
+  .main-footer .footer-column {
+    gap: 1.5rem;
+  }
+  .main-footer h3 {
+    font-size: 1.25rem;
+  }
+  .main-footer a {
+    font-size: 1rem;
+  }
+  .main-footer .footer-column nav ul {
+    gap: 1.5rem;
+  }
+  .bottom-footer small {
+    font-size: 0.75rem;
+  }
+  .bottom-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
